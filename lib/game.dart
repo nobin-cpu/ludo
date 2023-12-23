@@ -12,7 +12,6 @@ import 'package:fludo/util/colors.dart';
 import 'package:fludo/players/players.dart';
 import 'package:fludo/result/result.dart';
 import 'package:fludo/result/result_notifier.dart';
-
 import 'dice/dice.dart';
 import 'dice/dice_base.dart';
 
@@ -219,7 +218,9 @@ class _FludoGameState extends State<FludoGame> with TickerProviderStateMixin {
                               ),
                             );
                           })
-                        ])),
+                        ]
+                      )
+                    ),
                   ),
                 ],
               ),
@@ -235,7 +236,7 @@ List<Widget> _buildPawnWidgets() {
 
   if (players == 2) {
     for (int playerIndex = 0; playerIndex < 2; playerIndex++) {
-      Color playerColor = AppColors.player1; // Default initialization
+      Color playerColor = AppColors.player1; 
       switch (playerIndex) {
         case 0:
           playerColor = AppColors.player1;
@@ -288,10 +289,10 @@ List<Widget> _buildPawnWidgets() {
           playerColor = AppColors.player1;
           break;
         case 1:
-          playerColor = AppColors.player2;
+          playerColor = AppColors.player3;
           break;
         case 2:
-          playerColor = AppColors.player3;
+          playerColor = AppColors.player2;
           break;
         case 3:
           playerColor = AppColors.player4;
