@@ -289,10 +289,10 @@ List<Widget> _buildPawnWidgets() {
           playerColor = AppColors.player1;
           break;
         case 1:
-          playerColor = AppColors.player3;
+          playerColor = AppColors.player2;
           break;
         case 2:
-          playerColor = AppColors.player2;
+          playerColor = AppColors.player3;
           break;
         case 3:
           playerColor = AppColors.player4;
